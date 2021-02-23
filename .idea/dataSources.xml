@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="db" uuid="588a9095-6d0a-4a50-94b7-b325a613370c">
+    <data-source source="LOCAL" name="db [2]" uuid="62391c91-3b8b-402c-85fc-b38189cd8aef">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\admin\Documents\GIT\PYTHON\django_movie\db.sqlite3</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\Users\fatku\Documents\PROJECTS\GIT\PYTHON\django_movie\db.sqlite3</jdbc-url>
       <libraries>
         <library>
           <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.34.0/sqlite-jdbc-3.34.0.jar</url>
