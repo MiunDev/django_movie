@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.views.generic import ListView, DetailView
 from django.views.generic.base import View
-from .models import Movie
+from .models import Movie, Category, Actor
 from .forms import ReviewForm
 
 
@@ -11,7 +11,7 @@ class MovieView(ListView):
     model = Movie
     # получаем список фильмов, исключая фильмы в черновиках через поле draft
     queryset = Movie.objects.filter(draft=False)
-    template_name = "movies/movie_list.html"
+    # template_name = "movies/movie_list.html"
 
 
 class MovieDetailView(DetailView):
@@ -34,3 +34,10 @@ class AddReview(View):
             form.movie = movie  # передаем объект Movie из БД для формы
             form.save()  # сохранение данных формы в БД
         return redirect(movie.get_absolute_url())
+
+
+class ActorView(DetailView):
+    """Вывод информации об актере"""
+    model = Actor
+    template_name = "movies/actor.html"
+    slug_field = "name"
